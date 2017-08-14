@@ -75,7 +75,7 @@ GET /company/branch/_search
 .has_child Filter
 **************************
 
-`has_child` 查询和过滤在运行机制上类似，((("has_child query and filter", "filter")))区别是 `has_child` 过滤不支持 `source_mode` 参数。`has_child` 过滤仅用于筛选内容--如内部的一个 `filtered` 查询--和其他过滤行为类似：包含或者排除，但没有进行评分。
+`has_child` 查询和过滤在运行机制上类似，((("has_child query and filter", "filter")))区别是 `has_child` 过滤不支持 `score_mode` 参数。`has_child` 过滤仅用于筛选内容--如内部的一个 `filtered` 查询--和其他过滤行为类似：包含或者排除，但没有进行评分。
 
 `has_child` 过滤的结果没有被缓存，但是 `has_child` 过滤内部的过滤方法适用于通常的缓存规则。
 **************************
